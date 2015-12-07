@@ -4,6 +4,6 @@ Ext.define('moke.view.main.ViewportModel', {
 	
 	data: {
 		currentView: null,
-		name: '<h1>莫克工作室</h1>'
+		name: '<h2>莫克工作室</h2>'
 	}
 });
