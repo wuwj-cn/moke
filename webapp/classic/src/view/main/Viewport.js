@@ -48,6 +48,7 @@ Ext.define('moke.view.main.Viewport', {
 		xtype: 'tabpanel',
 		titleAlign: 'center',
 		reference: 'contentpanel',
+		//itemId: 'contentpanel',
 		width: 200,
 		minSize: 100,
 		border:true

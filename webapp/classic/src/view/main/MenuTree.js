@@ -18,8 +18,6 @@ Ext.define('moke.view.main.MenuTree', {
 		}
 	},
 	listeners: {
-		itemclick: function(view, record, item, index, e, eOpts){
-			Ext.Msg.alert('提示', record.data.url);
-		}
+		itemclick: 'onItemClick'
 	}
 });
