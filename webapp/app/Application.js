@@ -3,16 +3,16 @@
  * calls Ext.application(). This is the ideal place to handle application launch and
  * initialization details.
  */
-Ext.define('moke.Application', {
+Ext.define('Moke.Application', {
     extend: 'Ext.app.Application',
-    name: 'moke',
+    name: 'Moke',
     
     requires: [
 	       'Ext.app.*',
 	       'Ext.state.CookieProvider',
 	       'Ext.window.MessageBox',
 	       'Ext.tip.QuickTipManager',
-	       'moke.*'
+	       'Moke.*'
 	   ],
 
     stores: [
@@ -40,7 +40,7 @@ Ext.define('moke.Application', {
     	/*if (/[?&]solo\b/.test(location.search)) {
             
         } else {
-            Ext.create('moke.view.main.Viewport');
+            Ext.create('Moke.view.main.Viewport');
         }*/
     },
 

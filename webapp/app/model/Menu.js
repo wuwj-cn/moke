@@ -1,4 +1,4 @@
-Ext.define('moke.model.Menu', {
+Ext.define('Moke.model.Menu', {
     extend: 'Ext.data.TreeModel',
     
     fields: [

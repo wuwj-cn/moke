@@ -5,16 +5,16 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('moke.view.main.Main', {
+Ext.define('Moke.view.main.Main', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 
     requires: [
         'Ext.MessageBox',
 
-        'moke.view.main.MainController',
-        'moke.view.main.MainModel',
-        'moke.view.main.List'
+        'Moke.view.main.MainController',
+        'Moke.view.main.MainModel',
+        'Moke.view.main.List'
     ],
 
     controller: 'main',

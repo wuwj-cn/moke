@@ -1,9 +1,9 @@
-Ext.define('moke.view.user.User', {
+Ext.define('Moke.view.user.User', {
     extend: 'Ext.panel.Panel',
     xtype: 'view.main.user',
     
     requires: [
-   		'moke.view.user.UserForm'
+   		'Moke.view.user.UserForm'
    	],
     
     width: '100%',

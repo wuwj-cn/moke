@@ -1,4 +1,4 @@
-Ext.define('moke.store.Menu', {
+Ext.define('Moke.store.Menu', {
 	extend : 'Ext.data.TreeStore',
 	alias : 'store.menu',
 

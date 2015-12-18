@@ -38,18 +38,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -58,7 +58,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/development.properties": {
@@ -67,18 +67,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -87,7 +87,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/native.properties": {
@@ -96,18 +96,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -116,7 +116,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/package.properties": {
@@ -125,18 +125,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -145,7 +145,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/production.properties": {
@@ -154,18 +154,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -174,7 +174,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/sencha.cfg": {
@@ -183,18 +183,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -203,7 +203,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     ".sencha/app/testing.properties": {
@@ -212,18 +212,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -232,7 +232,7 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     "sass/config.rb": {
@@ -241,18 +241,18 @@
       "parameters": {
         "appControllers": "",
         "appModels": "",
-        "appName": "moke",
+        "appName": "Moke",
         "appStores": "",
         "appViews": "",
         "classic": false,
         "controllerFileName": "Main",
         "controllerName": "Main",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "frameworkName": "ext",
         "frameworkPath": "ext",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "modern": false,
-        "name": "moke",
+        "name": "Moke",
         "packagesRelPath": "ext/packages",
         "senchadir": ".sencha",
         "themeName": "default",
@@ -261,17 +261,17 @@
         "universal": true,
         "viewFileName": "Main",
         "viewName": "Main",
-        "viewNamespace": "moke.view"
+        "viewNamespace": "Moke.view"
       }
     },
     "app/controller/test.js": {
       "source": "{controllerFileName}.js.tpl.merge",
       "version": "b092f4aad11d2f7eaab5ce3e2dcc2fc3134f3188",
       "parameters": {
-        "appName": "moke",
+        "appName": "Moke",
         "controllerFileName": "test",
         "controllerName": "test",
-        "controllerNamespace": "moke.controller",
+        "controllerNamespace": "Moke.controller",
         "name": "test"
       }
     },
@@ -279,11 +279,11 @@
       "source": "{modelFileName}.js.tpl.merge",
       "version": "31d5356142a167c72422f7902f19df3c583f3249",
       "parameters": {
-        "appName": "moke",
+        "appName": "Moke",
         "baseClass": "Ext.data.Model",
         "fields": "id:int:null,name:string:null",
         "modelFileName": "test",
-        "modelNamespace": "moke.model",
+        "modelNamespace": "Moke.model",
         "name": "test"
       }
     }

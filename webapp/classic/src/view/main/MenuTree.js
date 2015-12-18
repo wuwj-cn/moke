@@ -1,8 +1,8 @@
-Ext.define('moke.view.main.MenuTree', {
+Ext.define('Moke.view.main.MenuTree', {
 	extend : 'Ext.tree.Panel',
 	xtype : 'menutree',
 
-	requires : [ 'moke.store.Menu' ],
+	requires : [ 'Moke.store.Menu' ],
 
 	border : false,
 	hrefTarget : 'contentpanel',

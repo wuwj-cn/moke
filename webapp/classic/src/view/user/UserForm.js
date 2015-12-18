@@ -1,4 +1,4 @@
-Ext.define('moke.view.user.UserForm', {
+Ext.define('Moke.view.user.UserForm', {
 	extend: 'Ext.form.Panel',
 	xtype: 'userform',
 	

@@ -2,7 +2,7 @@
  * This example shows how to use basic data binding. The panel title, the content and the
  * button text are all pulled from the view model.
  */
-Ext.define('moke.view.main.Hello', {
+Ext.define('Moke.view.main.Hello', {
     extend: 'Ext.panel.Panel',
     xtype: 'binding-hello-world',
     width: '100%',

@@ -1,4 +1,4 @@
-Ext.define('moke.store.Personnel', {
+Ext.define('Moke.store.Personnel', {
     extend: 'Ext.data.Store',
 
     alias: 'store.personnel',

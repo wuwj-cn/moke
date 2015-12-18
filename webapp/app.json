@@ -2,7 +2,7 @@
     /**
      * The application's namespace.
      */
-    "name": "moke",
+    "name": "Moke",
     
     /**
      * The version of the application.
@@ -82,13 +82,13 @@
     "sass": {
         /**
          * The root namespace to use when mapping *.scss files to classes in the
-         * sass/src and sass/var directories. For example, "moke.view.Foo" would
-         * map to "sass/src/view/Foo.scss". If we changed this to "moke.view" then
+         * sass/src and sass/var directories. For example, "Moke.view.Foo" would
+         * map to "sass/src/view/Foo.scss". If we changed this to "Moke.view" then
          * it would map to "sass/src/Foo.scss". To style classes outside the app's
          * root namespace, change this to "". Doing so would change the mapping of
-         * "moke.view.Foo" to "sass/src/moke/view/Foo.scss".
+         * "Moke.view.Foo" to "sass/src/Moke/view/Foo.scss".
          */
-        "namespace": "moke",
+        "namespace": "Moke",
 
         /**
          * File used to save sass variables edited via Sencha Inspector. This file

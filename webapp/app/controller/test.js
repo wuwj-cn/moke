@@ -1,3 +1,3 @@
-Ext.define('moke.controller.test', {
+Ext.define('Moke.controller.test', {
     extend: 'Ext.app.Controller'
 });

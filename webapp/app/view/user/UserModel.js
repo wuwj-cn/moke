@@ -1,4 +1,4 @@
-Ext.define('moke.view.user.UserModel', {
+Ext.define('Moke.view.user.UserModel', {
 	extend: 'Ext.app.ViewModel',
 	alias: 'viewmodel.user',
 	

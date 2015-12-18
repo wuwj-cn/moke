@@ -1,12 +1,12 @@
-Ext.define('moke.view.main.Viewport', {
+Ext.define('Moke.view.main.Viewport', {
 	extend: 'Ext.container.Viewport',
 	xtype: 'app-main',
 	
 	requires: [
 	    //'Ext.window.MessageBox',
-		'moke.view.main.ViewportController',
-        'moke.view.main.ViewportModel',
-        'moke.view.main.MenuTree'
+		'Moke.view.main.ViewportController',
+        'Moke.view.main.ViewportModel',
+        'Moke.view.main.MenuTree'
 	],
 	
 	controller: 'viewport',

@@ -1,12 +1,12 @@
 /**
  * This view is an example list of people.
  */
-Ext.define('moke.view.main.List', {
+Ext.define('Moke.view.main.List', {
     extend: 'Ext.grid.Panel',
     xtype: 'mainlist',
 
     requires: [
-        'moke.store.Personnel'
+        'Moke.store.Personnel'
     ],
 
     title: 'Personnel',

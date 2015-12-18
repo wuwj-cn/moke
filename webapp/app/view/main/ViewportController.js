@@ -1,4 +1,4 @@
-Ext.define('moke.view.main.ViewportController', {
+Ext.define('Moke.view.main.ViewportController', {
 	extend : 'Ext.app.ViewController',
 	alias : 'controller.viewport',
 
@@ -18,6 +18,7 @@ Ext.define('moke.view.main.ViewportController', {
 	},
 	
 	createTab: function (prefix, rec, cfg) {
+		if(!rec.data.leaf) return ;
         var tabs = this.lookupReference('contentpanel'),
             id = prefix + '_' + rec.getId(),
             tab = tabs.items.getByKey(id);
@@ -36,7 +37,7 @@ Ext.define('moke.view.main.ViewportController', {
 	onItemClick : function(view, record, item, index, e, eOpts) {
 		//Ext.Msg.alert('提示', record.data.url);
 		console.log('url: ' + record.data.url);
-		this.createTab('moke', record, {
+		this.createTab('Moke', record, {
             session: true,
             items: [{
             	xtype: record.data.url
