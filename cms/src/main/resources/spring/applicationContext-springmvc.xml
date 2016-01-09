@@ -13,6 +13,15 @@
 	</context:component-scan>
 
 	<mvc:annotation-driven /> 
+	
+<!-- 	<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"/> -->
+<!--     <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"> -->
+<!--         <property name="messageConverters"> -->
+<!--             <list> -->
+<!--                 <bean class="org.springframework.http.converter.json.MappingJackson2HttpMessageConverter" /> -->
+<!--             </list> -->
+<!--         </property> -->
+<!--     </bean> -->
 
 	<!-- 定义JSP文件的位置 -->
 	<bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">
