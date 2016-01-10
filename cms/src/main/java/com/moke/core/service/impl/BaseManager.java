@@ -2,9 +2,7 @@ package com.moke.core.service.impl;
 
 import java.io.Serializable;
 import java.math.BigDecimal;
-import java.util.ArrayList;
 import java.util.Collection;
-import java.util.Collections;
 import java.util.List;
 import java.util.Locale;
 
@@ -12,15 +10,13 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.springframework.context.NoSuchMessageException;
 import org.springframework.context.support.ApplicationObjectSupport;
+import org.springframework.stereotype.Service;
 
 import com.moke.core.dao.Dao;
 import com.moke.core.service.Manager;
 
 
-/**
- * Base class for Business Services - use this class for utility methods and
- * generic CRUD methods.
- */
+@Service
 public class BaseManager extends ApplicationObjectSupport implements Manager {
     protected final transient Log log = LogFactory.getLog(getClass());
     protected Dao dao;

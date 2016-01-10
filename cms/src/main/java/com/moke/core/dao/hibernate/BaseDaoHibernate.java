@@ -20,20 +20,15 @@ import org.hibernate.criterion.Order;
 import org.hibernate.criterion.Projections;
 import org.hibernate.transform.Transformers;
 import org.springframework.orm.ObjectRetrievalFailureException;
-import org.springframework.orm.hibernate3.HibernateCallback;
-import org.springframework.orm.hibernate3.HibernateTemplate;
-import org.springframework.orm.hibernate3.support.HibernateDaoSupport;
+import org.springframework.orm.hibernate4.HibernateCallback;
+import org.springframework.orm.hibernate4.HibernateTemplate;
+import org.springframework.orm.hibernate4.support.HibernateDaoSupport;
+import org.springframework.stereotype.Repository;
 
 import com.moke.core.dao.Dao;
 import com.moke.core.dao.PaginationSupport;
 
-/**
- * This class serves as the Base class for all other Daos - namely to hold
- * common methods that they might all use. Can be used for standard CRUD
- * operations.</p>
- *
- * @author yanxz
- */
+@Repository
 public class BaseDaoHibernate extends HibernateDaoSupport implements Dao {
 	protected final Log log = LogFactory.getLog(getClass());
 

@@ -1,12 +1,29 @@
 package com.moke.cms.model;
 
-import org.springframework.stereotype.Component;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+import javax.persistence.Table;
 
-@Component
+import org.hibernate.annotations.GenericGenerator;
+
+@Entity
+@Table(name="T_COMPANY")
 public class Company {
+	@Id  
+	@GeneratedValue(generator="system-uuid")  
+	@GenericGenerator(name = "system-uuid",strategy="uuid")  
+	@Column(length=32)  
 	public String id;
+	
+	@Column(length=32)
 	public String name;
+	
+	@Column(length=32) 
 	public String phone;
+	
+	@Column(length=32) 
 	public String email;
 	
 	public Company(){}
