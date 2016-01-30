@@ -19,6 +19,11 @@ public class CompanyManagerImpl extends BaseManager implements CompanyManager {
 	public Company getCompany(String id) {
 		return companyDao.getCompany(id);
 	}
+	
+	@Override
+	public Company findCompany(String id) {
+		return companyDao.findCompany(id);
+	}
 
 	@Override
 	public List<Company> getAllCompany() {

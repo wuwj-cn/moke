@@ -9,6 +9,8 @@ public interface CompanyManager extends Manager {
 
 	public Company getCompany(String id);
 	
+	public Company findCompany(String id);
+	
 	public List<Company> getAllCompany();
 	
 	public void saveCompany(Company company);

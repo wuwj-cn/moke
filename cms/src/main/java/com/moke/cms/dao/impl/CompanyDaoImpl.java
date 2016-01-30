@@ -15,10 +15,15 @@ public class CompanyDaoImpl extends BaseDaoHibernate implements CompanyDao {
 	public Company getCompany(String id) {
 		return (Company) this.getObject(Company.class, id);
 	}
+	
+	@Override
+	public Company findCompany(String id) {
+		List<Company> list = this.find("from Company where id = ?", new Object[]{id});
+		return list.isEmpty() ? null : list.get(0);
+	}
 
 	@Override
 	public List<Company> getAllCompany() {
-		// TODO Auto-generated method stub
 		return this.getObjects(Company.class);
 	}
 

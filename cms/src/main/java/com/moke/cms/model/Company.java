@@ -15,7 +15,7 @@ public class Company {
 	@GeneratedValue(generator="system-uuid")  
 	@GenericGenerator(name = "system-uuid",strategy="uuid")  
 	@Column(length=32)  
-	public String id;
+	public String uuid;
 	
 	@Column(length=32)
 	public String name;
@@ -28,16 +28,11 @@ public class Company {
 	
 	public Company(){}
 	
-	public Company(String id, String name){
-		this.id = id;
-		this.name = name;
+	public String getUuid() {
+		return uuid;
 	}
-	
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
+	public void setUuid(String uuid) {
+		this.uuid = uuid;
 	}
 	public String getName() {
 		return name;

@@ -521,6 +521,11 @@
 				<artifactId>druid</artifactId>
 				<version>${druid.version}</version>
 			</dependency>
+			<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>${fastjson.version}</version>
+		</dependency>
 		</dependencies>
 	</dependencyManagement>
 
@@ -919,6 +924,7 @@
 		<freemarker.version>2.3.20</freemarker.version>
 		<shiro.version>1.2.2</shiro.version>
 		<druid.version>0.2.23</druid.version>
+		<fastjson.version>1.1.41</fastjson.version>
 
 		<maven-antrun-plugin.version>1.7</maven-antrun-plugin.version>
 		<maven-clean-plugin.version>2.5</maven-clean-plugin.version>
