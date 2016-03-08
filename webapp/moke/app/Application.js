@@ -8,8 +8,12 @@ Ext.define('Moke.Application', {
     
     name: 'Moke',
 
-    requires : [ 'Ext.app.*', 'Ext.state.CookieProvider',
-     			'Ext.window.MessageBox', 'Ext.tip.QuickTipManager', 'Moke.*' ],
+    requires : [ 
+                'Ext.app.*', 
+                'Ext.state.CookieProvider',
+     			'Ext.window.MessageBox', 
+     			'Ext.tip.QuickTipManager', 
+     			'Moke.*' ],
      			
     stores: [
         // TODO: add global / shared stores here
@@ -25,10 +29,10 @@ Ext.define('Moke.Application', {
 		this.setDefaultToken('all');
 
 		Ext.setGlyphFontFamily('Pictos');
-		Ext.tip.QuickTipManager.init();
+//		Ext.tip.QuickTipManager.init();
 
 		if (!Ext.platformTags.test) {
-			Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));
+//			Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));
 		}
 	},
     

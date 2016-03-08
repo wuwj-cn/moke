@@ -22,9 +22,9 @@ public class ExceptionAdvice {
 	 */
 	@ResponseStatus(HttpStatus.BAD_REQUEST)
 	@ExceptionHandler(HttpMessageNotReadableException.class)
-	public Response handleHttpMessageNotReadableException(HttpMessageNotReadableException e) {
+	public Result handleHttpMessageNotReadableException(HttpMessageNotReadableException e) {
 		logger.error("参数解析失败", e);
-		return new Response().failure("could_not_read_json");
+		return Result.failure("could_not_read_json");
 	}
 
 	/**
@@ -32,9 +32,9 @@ public class ExceptionAdvice {
 	 */
 	@ResponseStatus(HttpStatus.METHOD_NOT_ALLOWED)
 	@ExceptionHandler(HttpRequestMethodNotSupportedException.class)
-	public Response handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) {
+	public Result handleHttpRequestMethodNotSupportedException(HttpRequestMethodNotSupportedException e) {
 		logger.error("不支持当前请求方法", e);
-		return new Response().failure("request_method_not_supported");
+		return Result.failure("request_method_not_supported");
 	}
 
 	/**
@@ -42,9 +42,9 @@ public class ExceptionAdvice {
 	 */
 	@ResponseStatus(HttpStatus.UNSUPPORTED_MEDIA_TYPE)
 	@ExceptionHandler(HttpMediaTypeNotSupportedException.class)
-	public Response handleHttpMediaTypeNotSupportedException(Exception e) {
+	public Result handleHttpMediaTypeNotSupportedException(Exception e) {
 		logger.error("不支持当前媒体类型", e);
-		return new Response().failure("content_type_not_supported");
+		return Result.failure("content_type_not_supported");
 	}
 
 	/**
@@ -52,8 +52,8 @@ public class ExceptionAdvice {
 	 */
 	@ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
 	@ExceptionHandler(Exception.class)
-	public Response handleException(Exception e) {
+	public Result handleException(Exception e) {
 		logger.error("服务运行异常", e);
-		return new Response().failure(e.getMessage());
+		return Result.failure(e.getMessage());
 	}
 }

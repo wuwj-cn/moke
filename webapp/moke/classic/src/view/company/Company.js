@@ -9,11 +9,6 @@ Ext.define('Moke.view.company.Company', {
 		type : 'company'
 	},
 
-//	bind: {
-////		title: '{name}',
-//		store: '{company}'
-//	},
-
 	bodyPadding : 20,
 	border : true,
 	width : 400,
@@ -24,7 +19,8 @@ Ext.define('Moke.view.company.Company', {
 	autoScroll : true, // 自动创建滚动条
 
 	defaults : {
-		anchor : '95%'
+		anchor : '95%',
+		readOnly: true
 	},
 	fieldDefaults : {
 		labelWidth : 80,
@@ -58,14 +54,19 @@ Ext.define('Moke.view.company.Company', {
 		hidden: true
 	} ],
 
-	buttons : [ {
+	buttons : [{
 		text : '查询',
-		action: 'search'
+		handler : 'onLoad'
+	}, {
+		text : '编辑',
+		handler : 'onEdit'
 	}, {
 		text : '重置',
 		handler : 'onReset'
 	}, {
 		text : '保存',
+		formBind: true,
+		disabled: true,
 		handler: 'onSave'
 	} ],
 	
