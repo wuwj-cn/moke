@@ -1,12 +1,11 @@
-package com.moke.cms.service;
-
-import java.util.List;
+package com.moke.cms.service.impl;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.moke.cms.dao.CompanyDao;
 import com.moke.cms.model.Company;
+import com.moke.cms.service.CompanyManager;
 import com.moke.core.service.impl.BaseManager;
 
 @Service
@@ -16,20 +15,10 @@ public class CompanyManagerImpl extends BaseManager implements CompanyManager {
 	public CompanyDao companyDao;
 	
 	@Override
-	public Company getCompany(String id) {
-		return companyDao.getCompany(id);
+	public Company getCompany() {
+		return companyDao.getCompany();
 	}
 	
-	@Override
-	public Company findCompany(String id) {
-		return companyDao.findCompany(id);
-	}
-
-	@Override
-	public List<Company> getAllCompany() {
-		return companyDao.getAllCompany();
-	}
-
 	@Override
 	public void saveCompany(Company company) {
 		companyDao.saveCompany(company);

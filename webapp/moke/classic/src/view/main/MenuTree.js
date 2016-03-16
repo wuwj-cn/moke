@@ -13,7 +13,8 @@ Ext.define('Moke.view.main.MenuTree', {
 			type: 'ajax',
 			url : 'data/menus.json',
 			reader : {
-				type : 'json'
+				type : 'json',
+				rootProperty: 'data'
 			}
 		}
 	},

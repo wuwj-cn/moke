@@ -23,13 +23,7 @@ public class CompanyController {
 	
 	@RequestMapping(value = "/get", method= RequestMethod.POST)
 	public Result get() {
-		List<Company> list = companyManager.getAllCompany();
-		Company company = null;
-		if(null != list && !list.isEmpty()) {
-			company = list.get(0);
-		} else {
-			company = new Company();
-		}
+		Company company = companyManager.getCompany();
 		return Result.sucess(company);
 	}
 	

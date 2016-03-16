@@ -1,13 +1,5 @@
-/**
- * 
- */
 package com.moke.core.tree.model;
 
-/**
- * 
- * @author yuyy
- * @date   Apr 21, 2009
- */
 public class RadioTreeNode extends TreeNode {
 	protected boolean checked;
 	protected boolean disabled;

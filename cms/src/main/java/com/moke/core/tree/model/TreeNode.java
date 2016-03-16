@@ -1,14 +1,6 @@
-/**
- * Copyright 2007 ICSSHS.
- */
 package com.moke.core.tree.model;
 
 
-/**
- * General tree node structure.
- * 
- * @author yanxz
- */
 public class TreeNode {
 	protected String id;
 	protected String text;
@@ -18,16 +10,6 @@ public class TreeNode {
 	protected String hrefTarget;
 	protected boolean expanded;
 	protected boolean leaf;
-	protected Integer orgLevel;
-	protected String orgType;
-	protected String tableId;
-	protected String columnId;
-	protected String taskSingle;
-	protected String valueType;
-	protected String statType;
-	protected String numberFormat;
-	protected Integer columnWidth;
-	
 
 	public TreeNode() {
 	}
@@ -56,7 +38,6 @@ public class TreeNode {
 		this.hrefTarget = hrefTarget;
 		this.expanded = expanded;
 		this.leaf = leaf;
-		this.orgLevel = orgLevel;
 	}
 
 	public TreeNode(String id, String text, String qtip, String iconCls, String href, String hrefTarget,
@@ -70,8 +51,6 @@ public class TreeNode {
 		this.hrefTarget = hrefTarget;
 		this.expanded = expanded;
 		this.leaf = leaf;
-		this.orgLevel = orgLevel;
-		this.orgType = orgType;
 	}
 
 	public String getId() {
@@ -136,78 +115,6 @@ public class TreeNode {
 
 	public void setLeaf(boolean leaf) {
 		this.leaf = leaf;
-	}
-
-	public Integer getOrgLevel() {
-		return orgLevel;
-	}
-
-	public void setOrgLevel(Integer orgLevel) {
-		this.orgLevel = orgLevel;
-	}
-
-	public String getOrgType() {
-		return orgType;
-	}
-
-	public void setOrgType(String orgType) {
-		this.orgType = orgType;
-	}
-
-	public String getColumnId() {
-		return columnId;
-	}
-
-	public void setColumnId(String columnId) {
-		this.columnId = columnId;
-	}
-
-	public String getTableId() {
-		return tableId;
-	}
-
-	public void setTableId(String tableId) {
-		this.tableId = tableId;
-	}
-
-	public String getValueType() {
-		return valueType;
-	}
-
-	public void setValueType(String valueType) {
-		this.valueType = valueType;
-	}
-
-	public String getStatType() {
-		return statType;
-	}
-
-	public void setStatType(String statType) {
-		this.statType = statType;
-	}
-
-	public String getNumberFormat() {
-		return numberFormat;
-	}
-
-	public void setNumberFormat(String numberFormat) {
-		this.numberFormat = numberFormat;
-	}
-
-	public Integer getColumnWidth() {
-		return columnWidth;
-	}
-
-	public void setColumnWidth(Integer columnWidth) {
-		this.columnWidth = columnWidth;
-	}
-
-	public String getTaskSingle() {
-		return taskSingle;
-	}
-
-	public void setTaskSingle(String taskSingle) {
-		this.taskSingle = taskSingle;
 	}
 
 }

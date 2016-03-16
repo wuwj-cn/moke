@@ -10,9 +10,8 @@ Ext.define('Moke.Application', {
 
     requires : [ 
                 'Ext.app.*', 
-                'Ext.state.CookieProvider',
-     			'Ext.window.MessageBox', 
-     			'Ext.tip.QuickTipManager', 
+//                'Ext.state.CookieProvider',
+//     			'Ext.window.MessageBox', 
      			'Moke.*' ],
      			
     stores: [
@@ -28,8 +27,8 @@ Ext.define('Moke.Application', {
 		// Set the default route to start the application.
 		this.setDefaultToken('all');
 
-		Ext.setGlyphFontFamily('Pictos');
-//		Ext.tip.QuickTipManager.init();
+//		Ext.setGlyphFontFamily('Pictos');
+		Ext.setGlyphFontFamily('FontAwesome');
 
 		if (!Ext.platformTags.test) {
 //			Ext.state.Manager.setProvider(Ext.create('Ext.state.CookieProvider'));

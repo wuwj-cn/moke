@@ -15,16 +15,19 @@ public class Company {
 	@GeneratedValue(generator="system-uuid")  
 	@GenericGenerator(name = "system-uuid",strategy="uuid")  
 	@Column(length=32)  
-	public String uuid;
+	private String uuid;
 	
 	@Column(length=32)
-	public String name;
+	private String code;
+	
+	@Column(length=32)
+	private String name;
 	
 	@Column(length=32) 
-	public String phone;
+	private String phone;
 	
 	@Column(length=32) 
-	public String email;
+	private String email;
 	
 	public Company(){}
 	
@@ -51,6 +54,14 @@ public class Company {
 	}
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getCode() {
+		return code;
+	}
+
+	public void setCode(String code) {
+		this.code = code;
 	}
 	
 }

@@ -1,14 +1,6 @@
-/**
- * Copyright 2007 ICSSHS.
- */
 package com.moke.core.tree.model;
 
 
-/**
- * General tree node structure with checkbox.
- * 
- * @author yanxz
- */
 public class CheckboxTreeNode extends TreeNode {
 	protected boolean checked;
 	protected boolean disabled;
