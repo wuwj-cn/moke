@@ -43,11 +43,11 @@ Ext.define('Moke.view.dept.DeptForm', {
 
 	tbar : [{
 		text : '增加',
-		glyph : 0xf067,
+		iconCls: 'x-fa fa-plus-circle',
 		handler : 'onAdd'
 	}, {
 		text : '保存',
-		glyph : 0xf0c7,
+		iconCls: 'x-fa fa-save',
 		formBind : true,
 		disabled : true,
 		handler : 'onSave'

@@ -24,6 +24,7 @@ Ext.define('Moke.view.dept.Dept', {
 	}, {
 		region : 'center',
 		xtype : 'dept-form',
+		reference: 'dept-form',
 		height : '100%',
 		border : true
 	} ]

@@ -46,4 +46,8 @@ public class DeptManagerImpl extends BaseManager implements DeptManager {
 		}
 		return nodes;
 	}
+	
+	public Dept findDeptByCode(String deptCode) {
+		return deptDao.findDeptByCode(deptCode);
+	}
 }

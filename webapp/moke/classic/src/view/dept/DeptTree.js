@@ -11,7 +11,6 @@ Ext.define('Moke.view.dept.DeptTree', {
     rootVisible: true,
     multiSelect: true,
 	initComponent: function() {
-    	console.log('dept tree panel init...');
     	this.store = Ext.create('Moke.store.DeptTree');
 		this.callParent();
     },

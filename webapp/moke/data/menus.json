@@ -4,7 +4,8 @@
 		{"id":"3", "text": "系统管理", "leaf": false, "data": [
 			{"id":"3-0", "text": "公司管理", "url": "company", "leaf": true },
 			{"id":"3-1", "text": "部门管理", "url": "dept", "leaf": true },
-			{"id":"3-2", "text": "用户管理", "url": "view.user", "leaf": true}
+			{"id":"3-2", "text": "角色管理", "url": "role", "leaf": true},
+			{"id":"3-3", "text": "用户管理", "url": "view.user", "leaf": true}
 		] },
 		{ "id":"4","text": "视频", "url": "binding-hello-world", "leaf": true }		
 	]

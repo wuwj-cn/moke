@@ -18,7 +18,7 @@ Ext.define('Moke.view.company.CompanyController', {
 		var me = this, formPanel = button.up('form');
 
 		formPanel.getForm().submit({
-			url : 'http://localhost:8080/cms/company/save',
+			url : Moke.getApplication().baseURL + '/company/save',
 			waitMsg : '正在保存数据...',
 			failure : function(form, action) {
 				var result = Ext.decode(action.response.responseText);
@@ -45,7 +45,7 @@ Ext.define('Moke.view.company.CompanyController', {
 	onLoad : function(button, event) {
 		var me = this, formPanel = button.up('form');
 		formPanel.getForm().load({
-			url : 'http://localhost:8080/cms/company/get',
+			url : Moke.getApplication().baseURL + '/company/get',
 			waitMsg : '拼命加载中...',
 			success : function(form, action) {
 				// Ext.Msg.alert('Sucess', '操作成功');

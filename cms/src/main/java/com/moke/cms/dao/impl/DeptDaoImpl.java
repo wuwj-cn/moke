@@ -34,8 +34,18 @@ public class DeptDaoImpl extends BaseDaoHibernate implements DeptDao {
 
 	@Override
 	public List<Dept> findDeptByParentCode(String parentCode) {
-		String hql = "from Dept where parentCode = ?";
+		String hql = "from Dept where parentCode = ? order by code";
 		return this.find(hql, new Object[]{parentCode});
+	}
+	
+	@Override
+	public Dept findDeptByCode(String deptCode) {
+		String hql = "from Dept where code = ?";
+		List<Dept> depts = this.find(hql, new Object[]{deptCode});
+		if(null != depts && !depts.isEmpty()) {
+			return depts.get(0);
+		}
+		return null;
 	}
 
 }

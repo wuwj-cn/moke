@@ -53,4 +53,10 @@ public class DeptController {
 		List<TreeNode> nodes = deptManager.getDeptTree(deptCode);
 		return Result.sucess(nodes);
 	}
+	
+	@RequestMapping(value="/{deptCode}", method = RequestMethod.POST)
+	public Result findDeptByCode(@PathVariable String deptCode) {
+		Dept dept = deptManager.findDeptByCode(deptCode);
+		return Result.sucess(dept);
+	}
 }
