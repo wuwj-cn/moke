@@ -27,32 +27,6 @@ public class TreeNode {
 		this.leaf = leaf;
 	}
 	
-	public TreeNode(String id, String text, String qtip, String iconCls, String href, String hrefTarget,
-			boolean expanded, boolean leaf, Integer orgLevel) {
-		super();
-		this.id = id;
-		this.text = text;
-		this.qtip = qtip;
-		this.iconCls = iconCls;
-		this.href = href;
-		this.hrefTarget = hrefTarget;
-		this.expanded = expanded;
-		this.leaf = leaf;
-	}
-
-	public TreeNode(String id, String text, String qtip, String iconCls, String href, String hrefTarget,
-			boolean expanded, boolean leaf, Integer orgLevel, String orgType) {
-		super();
-		this.id = id;
-		this.text = text;
-		this.qtip = qtip;
-		this.iconCls = iconCls;
-		this.href = href;
-		this.hrefTarget = hrefTarget;
-		this.expanded = expanded;
-		this.leaf = leaf;
-	}
-
 	public String getId() {
 		return id;
 	}

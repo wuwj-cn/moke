@@ -15,6 +15,7 @@ import com.moke.cms.model.Dept;
 import com.moke.cms.service.CompanyManager;
 import com.moke.cms.service.DeptManager;
 import com.moke.core.advice.Result;
+import com.moke.core.tree.model.CheckboxTreeNode;
 import com.moke.core.tree.model.TreeNode;
 
 @RestController
@@ -51,6 +52,12 @@ public class DeptController {
 	@RequestMapping(value="/tree/{deptCode}", method = RequestMethod.GET)
 	public Result getDeptTreeByCode(@PathVariable String deptCode) {
 		List<TreeNode> nodes = deptManager.getDeptTree(deptCode);
+		return Result.sucess(nodes);
+	}
+	
+	@RequestMapping(value="/multitree/{deptCode}", method= RequestMethod.GET)
+	public Result getDeptMultiTreeByCode(@PathVariable String deptCode){
+		List<CheckboxTreeNode> nodes = deptManager.getDeptMultiTree(deptCode);
 		return Result.sucess(nodes);
 	}
 	

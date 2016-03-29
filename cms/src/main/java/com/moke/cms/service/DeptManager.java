@@ -4,6 +4,7 @@ import java.util.List;
 
 import com.moke.cms.model.Dept;
 import com.moke.core.service.Manager;
+import com.moke.core.tree.model.CheckboxTreeNode;
 import com.moke.core.tree.model.TreeNode;
 
 public interface DeptManager extends Manager {
@@ -17,6 +18,8 @@ public interface DeptManager extends Manager {
 	public void removeDept(String id);
 	
 	public List<TreeNode> getDeptTree(String parentCode);
+	
+	public List<CheckboxTreeNode> getDeptMultiTree(String parentCode);
 	
 	public Dept findDeptByCode(String deptCode);
 }

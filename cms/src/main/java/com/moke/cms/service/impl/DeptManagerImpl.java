@@ -10,6 +10,7 @@ import com.moke.cms.dao.DeptDao;
 import com.moke.cms.model.Dept;
 import com.moke.cms.service.DeptManager;
 import com.moke.core.service.impl.BaseManager;
+import com.moke.core.tree.model.CheckboxTreeNode;
 import com.moke.core.tree.model.TreeNode;
 
 @Service
@@ -43,6 +44,15 @@ public class DeptManagerImpl extends BaseManager implements DeptManager {
 		List<TreeNode> nodes = new ArrayList<TreeNode>();
 		for(Dept dept : depts) {
 			nodes.add(new TreeNode(dept.getCode(), dept.getName(), dept.getName(), "", "", "", false, false));
+		}
+		return nodes;
+	}
+	
+	public List<CheckboxTreeNode> getDeptMultiTree(String parentCode) {
+		List<Dept> depts = deptDao.findDeptByParentCode(parentCode);
+		List<CheckboxTreeNode> nodes = new ArrayList<CheckboxTreeNode>();
+		for(Dept dept : depts) {
+			nodes.add(new CheckboxTreeNode(dept.getCode(), dept.getName(), dept.getName(), "", "", "", false, false, false));
 		}
 		return nodes;
 	}
