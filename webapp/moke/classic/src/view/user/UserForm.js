@@ -4,7 +4,7 @@ Ext.define('Moke.view.user.UserForm', {
 
 	// requires: ['Ext.ux.TreePicker'],
 
-	border : false,
+//	border : false,
 	autoScroll : true, // 自动创建滚动条
 	split : true,
 	// layout : 'fit',

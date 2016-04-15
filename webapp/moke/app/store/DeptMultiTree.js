@@ -22,8 +22,5 @@ Ext.define('Moke.store.DeptMultiTree', {
 			type : 'json',
 			rootProperty: 'data'
 		}
-	},
-	initComponent : function() {
-		this.callParent();
 	}
 });

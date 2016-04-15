@@ -10,9 +10,5 @@ Ext.define('Moke.model.DeptTree', {
         { name: 'hrefTarget', type: 'string' },
         { name: 'expanded',  type: 'boolean', defaultValue: true },
         { name: 'leaf', type: 'boolean', defaultValue: true }
-    ],
-    initComponent: function() {
-    	console.log('dept tree model init...');
-		this.callParent();
-    }
+    ]
 });

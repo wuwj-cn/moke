@@ -2,19 +2,22 @@ Ext.define('Moke.view.role.RoleForm', {
 	extend : 'Ext.form.Panel',
 	xtype : 'role-form',
 
-	border : false,
+//	border : false,
 	autoScroll : true, // 自动创建滚动条
-	layout : 'form',
-	bodyPadding : 5,
-	// defaults : {
-	// anchor : '95%'
-	// },
+	split : true,
+	// layout : 'fit',
+	defaults : {
+		anchor : '95%'
+	},
 
 	items : [ {
 		xtype : 'fieldcontainer',
-		layout : 'hbox',
-		fieldDefaults : {
-			labelWidth : 60,
+		layout : {
+			type : 'hbox',
+			align : 'stretch'
+		},
+		defaults : {
+			labelWidth : 80,
 			labelAlign : 'right'
 		},
 		defaultType : 'textfield',
@@ -23,13 +26,15 @@ Ext.define('Moke.view.role.RoleForm', {
 			bind : {
 				fieldLabel : '{code}'
 			},
-			allowBlank : false
+			allowBlank : false,
+			flex: 1
 		}, {
 			name : "name",
 			bind : {
 				fieldLabel : "{name}"
 			},
-			allowBlank : false
+			allowBlank : false,
+			flex: 1
 		}, {
 			name : 'uuid',
 			hidden : true

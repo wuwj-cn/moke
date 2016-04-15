@@ -10,10 +10,10 @@ Ext.define('Moke.view.user.UserController', {
 	onSave : function(button, event) {
 		var me = this, 
 			formPanel = button.up('form'),
-			gridPanel = me.lookupReference('role-grid');
+			gridPanel = me.lookupReference('user-list');
 		
 		formPanel.getForm().submit({
-			url : Moke.getApplication().baseURL + '/role/save',
+			url : Moke.getApplication().baseURL + '/user/save',
 			waitMsg : '正在保存数据...',
 			failure : function(form, action) {
 				var result = Ext.decode(action.response.responseText);
@@ -30,7 +30,7 @@ Ext.define('Moke.view.user.UserController', {
 	
 	onRowClick: function(view, record, tr, rowIndex, e, eOpts){
 		var me = this, 
-		formPanel = me.lookupReference('role-form');
+		formPanel = me.lookupReference('user-form');
 		formPanel.getForm().setValues(record.data);
 	}
 });

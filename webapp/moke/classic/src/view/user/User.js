@@ -20,8 +20,8 @@ Ext.define('Moke.view.user.User', {
 		border : true
 	}, {
 		region : 'center',
-		xtype : 'user-grid',
-		reference: 'user-grid',
+		xtype : 'user-list',
+		reference: 'user-list',
 		height : '75%',
 		border : true
 	} ]

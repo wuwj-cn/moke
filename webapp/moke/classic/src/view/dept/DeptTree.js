@@ -10,10 +10,7 @@ Ext.define('Moke.view.dept.DeptTree', {
     useArrows: true,
     rootVisible: true,
     multiSelect: true,
-	initComponent: function() {
-    	this.store = Ext.create('Moke.store.DeptTree');
-		this.callParent();
-    },
+    store: Ext.create('Moke.store.DeptTree'),
 	listeners: {
 		itemclick: 'onItemClick',
 		beforeexpand: 'onBeforeExpand',
