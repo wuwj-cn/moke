@@ -16,7 +16,7 @@ Ext.define('Moke.store.DeptMultiTree', {
 	proxy: {
 		type: 'rest',
 		api : {
-			read: 'http://localhost:8080/cms' + '/dept/multitree'
+			read: 'http://localhost:8080/sys' + '/dept/multitree'
 		},
 		reader : {
 			type : 'json',

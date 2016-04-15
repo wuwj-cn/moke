@@ -7,7 +7,7 @@ Ext.define('Moke.Application', {
     extend: 'Ext.app.Application',
     
     name: 'Moke',
-    baseURL: 'http://localhost:8080/cms',
+    baseURL: 'http://localhost:8080/sys',
 
     requires : [ 
                 'Ext.app.*', 

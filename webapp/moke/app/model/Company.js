@@ -19,12 +19,12 @@ Ext.define('Moke.model.Company', {
 	} ],
 	proxy : {
 		type : 'rest',
-		//url : 'http://localhost:8080/cms/company',
+		//url : 'http://localhost:8080/sys/company',
 		api : {
-			create : 'http://localhost:8080/cms/company/add',
-			read : 'http://localhost:8080/cms/company/get', // 在调用Model的静态方法load时，会默认去这里查数据
-			update : 'http://localhost:8080/cms/company/update',
-			destroy : 'http://localhost:8080/cms/company/delete' // 在调用Model的erase方法（Ext5.0以前的版本是destroy方法，意思就是根据ID删除Model）
+			create : 'http://localhost:8080/sys/company/add',
+			read : 'http://localhost:8080/sys/company/get', // 在调用Model的静态方法load时，会默认去这里查数据
+			update : 'http://localhost:8080/sys/company/update',
+			destroy : 'http://localhost:8080/sys/company/delete' // 在调用Model的erase方法（Ext5.0以前的版本是destroy方法，意思就是根据ID删除Model）
 		},
 		listeners : {
 			exception : function(proxy, response, options) {

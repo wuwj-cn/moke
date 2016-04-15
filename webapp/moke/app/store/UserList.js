@@ -10,7 +10,7 @@ Ext.define('Moke.store.UserList', {
 	proxy: {
 		type: 'rest',
 		api : {
-			read: 'http://localhost:8080/cms' +　'/user/list'
+			read: 'http://localhost:8080/sys' +　'/user/list'
 		},
 		reader : {
 			type : 'json',

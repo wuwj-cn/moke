@@ -10,7 +10,7 @@ Ext.define('Moke.store.RoleGrid', {
 	proxy: {
 		type: 'rest',
 		api : {
-			read: 'http://localhost:8080/cms' +　'/role/list'
+			read: 'http://localhost:8080/sys' +　'/role/list'
 		},
 		reader : {
 			type : 'json',
