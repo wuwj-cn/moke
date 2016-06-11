@@ -38,4 +38,12 @@ public class UserDaoImpl extends BaseDaoHibernate implements UserDao {
 		return this.getObjects(User.class);
 	}
 
+	@Override
+	public User findByName(String username) {
+		String hql = "from User where username = ?";
+		List<User> list = this.find(hql, username);
+		if(null != list && !list.isEmpty()) return list.get(0);
+		return null;
+	}
+
 }

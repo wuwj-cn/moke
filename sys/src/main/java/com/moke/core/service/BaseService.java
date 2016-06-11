@@ -5,7 +5,7 @@ import java.util.List;
 
 import com.moke.core.dao.Dao;
 
-public interface Manager {
+public interface BaseService {
     
     /**
      * Expose the setDao method for testing purposes

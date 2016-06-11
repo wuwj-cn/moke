@@ -16,4 +16,6 @@ public interface UserDao extends Dao {
 	public void removeUser(String id);
 	
 	public List<User> findUsers();
+	
+	public User findByName(String username);
 }

@@ -5,13 +5,13 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.moke.core.service.impl.BaseManager;
+import com.moke.core.service.impl.BaseServiceImpl;
 import com.moke.sys.dao.RoleDao;
 import com.moke.sys.model.Role;
-import com.moke.sys.service.RoleManager;
+import com.moke.sys.service.RoleService;
 
 @Service
-public class RoleManagerImpl extends BaseManager implements RoleManager {
+public class RoleServiceImpl extends BaseServiceImpl implements RoleService {
 
 	@Autowired
 	public RoleDao roleDao;

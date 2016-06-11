@@ -6,6 +6,8 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
+import javax.annotation.Resource;
+
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
@@ -34,6 +36,14 @@ public class BaseDaoHibernate extends HibernateDaoSupport implements Dao {
 
 	private boolean cacheQueries = false;
 	private String queryCacheRegion;
+	
+	/**
+	 * annotation方式不能注入sessionFactory和hibernateTemplate
+	 */
+	@Resource
+	public void setSessionFactory0(SessionFactory sessionFactory){  
+		super.setSessionFactory(sessionFactory);  
+	}
 
 	protected HibernateTemplate createHibernateTemplate(SessionFactory sessionFactory) {
 		HibernateTemplate hibernateTemplate = super.createHibernateTemplate(sessionFactory);

@@ -6,15 +6,15 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.moke.core.service.impl.BaseManager;
+import com.moke.core.service.impl.BaseServiceImpl;
 import com.moke.core.tree.model.CheckboxTreeNode;
 import com.moke.core.tree.model.TreeNode;
 import com.moke.sys.dao.DeptDao;
 import com.moke.sys.model.Dept;
-import com.moke.sys.service.DeptManager;
+import com.moke.sys.service.DeptService;
 
 @Service
-public class DeptManagerImpl extends BaseManager implements DeptManager {
+public class DeptServiceImpl extends BaseServiceImpl implements DeptService {
 
 	@Autowired
 	public DeptDao deptDao;

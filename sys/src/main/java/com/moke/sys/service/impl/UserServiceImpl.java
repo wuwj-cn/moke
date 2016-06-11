@@ -1,17 +1,18 @@
 package com.moke.sys.service.impl;
 
 import java.util.List;
+import java.util.Set;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.moke.core.service.impl.BaseManager;
+import com.moke.core.service.impl.BaseServiceImpl;
 import com.moke.sys.dao.UserDao;
 import com.moke.sys.model.User;
-import com.moke.sys.service.UserManager;
+import com.moke.sys.service.UserService;
 
-@Service
-public class UserManagerImpl extends BaseManager implements UserManager {
+@Service(value="userService")
+public class UserServiceImpl extends BaseServiceImpl implements UserService {
 
 	@Autowired
 	public UserDao userDao;
@@ -39,6 +40,23 @@ public class UserManagerImpl extends BaseManager implements UserManager {
 	@Override
 	public List<User> findUsers() {
 		return userDao.findUsers();
+	}
+
+	@Override
+	public Set<String> findRoles(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Set<String> findPermissions(String username) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public User findByName(String username) {
+		return userDao.findByName(username);
 	}
 
 }

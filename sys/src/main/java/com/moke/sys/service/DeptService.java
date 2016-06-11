@@ -2,12 +2,12 @@ package com.moke.sys.service;
 
 import java.util.List;
 
-import com.moke.core.service.Manager;
+import com.moke.core.service.BaseService;
 import com.moke.core.tree.model.CheckboxTreeNode;
 import com.moke.core.tree.model.TreeNode;
 import com.moke.sys.model.Dept;
 
-public interface DeptManager extends Manager {
+public interface DeptService extends BaseService {
 
 	public Dept getDept(String id);
 	

@@ -3,7 +3,9 @@ Ext.define('Moke.view.main.Main', {
 	xtype: 'main',
 	
 	requires: [
-	    'Ext.SegmentedButton'           
+	    'Ext.SegmentedButton',
+	    'Moke.view.main.Product',
+	    'Moke.view.main.Search'
 	],
 	
     controller: 'main',
@@ -32,7 +34,11 @@ Ext.define('Moke.view.main.Main', {
 	    	reference: 'mainContent',
 	    	layout: 'card',
 	    	items: [{
-	    		html: '首页'
+	    		html: '首页11'
+	    	}, {
+	    		xtype: 'product'
+	    	}, {
+	    		xtype: 'search'
 	    	}]
 	    }
 	]

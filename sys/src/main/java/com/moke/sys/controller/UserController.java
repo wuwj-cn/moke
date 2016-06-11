@@ -9,25 +9,25 @@ import org.springframework.web.bind.annotation.RestController;
 
 import com.moke.core.advice.Result;
 import com.moke.sys.model.User;
-import com.moke.sys.service.UserManager;
+import com.moke.sys.service.UserService;
 
 @RestController
 @RequestMapping("/user")
 public class UserController {
 
 	@Autowired
-	public UserManager userManager;
+	public UserService userService;
 	
 	@RequestMapping(value = "/save", method = RequestMethod.POST)
 	public Result saveRole(User user) {
 		if(user.getUuid().isEmpty()) user.setUuid(null);
-		userManager.saveUser(user);
+		userService.saveUser(user);
 		return Result.sucess(user);
 	}
 	
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
 	public Result findRoles() {
-		List<User> users = userManager.findUsers();
+		List<User> users = userService.findUsers();
 		return Result.sucess(users);
 	}
 }

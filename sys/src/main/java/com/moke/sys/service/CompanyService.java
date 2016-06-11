@@ -1,9 +1,9 @@
 package com.moke.sys.service;
 
-import com.moke.core.service.Manager;
+import com.moke.core.service.BaseService;
 import com.moke.sys.model.Company;
 
-public interface CompanyManager extends Manager {
+public interface CompanyService extends BaseService {
 
 	public Company getCompany();
 	

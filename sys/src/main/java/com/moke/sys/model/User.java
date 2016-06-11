@@ -28,7 +28,13 @@ public class User {
 	private String deptCode;
 	
 	@Column(length=32)
-	private String roleCode;
+	private String password;
+	
+	@Column(length=32)
+	private String salt;
+
+	@Column(length=1, nullable=false)
+    private Boolean locked = Boolean.FALSE;
 
 	public String getUuid() {
 		return uuid;
@@ -62,12 +68,32 @@ public class User {
 		this.deptCode = deptCode;
 	}
 
-	public String getRoleCode() {
-		return roleCode;
+	public String getPassword() {
+		return password;
 	}
 
-	public void setRoleCode(String roleCode) {
-		this.roleCode = roleCode;
+	public void setPassword(String password) {
+		this.password = password;
+	}
+
+	public String getSalt() {
+		return salt;
+	}
+
+	public void setSalt(String salt) {
+		this.salt = salt;
+	}
+
+	public String getCredentialsSalt() {
+        return username + salt;
+    }
+	
+	public Boolean getLocked() {
+		return locked;
+	}
+
+	public void setLocked(Boolean locked) {
+		this.locked = locked;
 	}
 	
 }

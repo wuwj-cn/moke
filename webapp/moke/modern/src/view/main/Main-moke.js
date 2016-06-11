@@ -5,7 +5,7 @@
  *
  * TODO - Replace this content of this view to suite the needs of your application.
  */
-Ext.define('Moke.view.main.Main', {
+Ext.define('Moke.view.main.Main-moke', {
     extend: 'Ext.tab.Panel',
     xtype: 'app-main',
 

@@ -245,12 +245,12 @@
             {
                 "path": "${framework.dir}/build/ext-modern-all-debug.js"
             }
-        ],
+        ]
         //以下是新增的添加本地化包的代码
-        "requires" : [
+        /*"requires" : [
             "locale"
         ],
-        "locale": "zh_CN"
+        "locale": "zh_CN"*/
     },
 
     /**

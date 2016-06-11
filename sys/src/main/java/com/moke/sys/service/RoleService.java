@@ -2,10 +2,10 @@ package com.moke.sys.service;
 
 import java.util.List;
 
-import com.moke.core.service.Manager;
+import com.moke.core.service.BaseService;
 import com.moke.sys.model.Role;
 
-public interface RoleManager extends Manager {
+public interface RoleService extends BaseService {
 
 	public Role getRole(String id);
 

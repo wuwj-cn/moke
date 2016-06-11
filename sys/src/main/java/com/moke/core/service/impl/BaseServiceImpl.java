@@ -13,11 +13,11 @@ import org.springframework.context.support.ApplicationObjectSupport;
 import org.springframework.stereotype.Service;
 
 import com.moke.core.dao.Dao;
-import com.moke.core.service.Manager;
+import com.moke.core.service.BaseService;
 
 
 @Service
-public class BaseManager extends ApplicationObjectSupport implements Manager {
+public class BaseServiceImpl extends ApplicationObjectSupport implements BaseService {
     protected final transient Log log = LogFactory.getLog(getClass());
     protected Dao dao;
     
@@ -75,35 +75,35 @@ public class BaseManager extends ApplicationObjectSupport implements Manager {
 
     
 	/**
-     * @see com.icsshs.tlbtWeb.transmission.handler.Manager#setDao(com.icsshs.tlbtWeb.dao.Dao)
+     * @see com.BaseServiceImpl.tlbtWeb.transmission.handler.Manager#setDao(com.icsshs.tlbtWeb.dao.Dao)
      */
     public void setDao(Dao dao) {
         this.dao = dao;
     }
     
 	/**
-     * @see com.icsshs.tlbtWeb.transmission.handler.Manager#getObject(java.lang.Class, java.io.Serializable)
+     * @see com.BaseServiceImpl.tlbtWeb.transmission.handler.Manager#getObject(java.lang.Class, java.io.Serializable)
      */
     public Object getObject(Class clazz, Serializable id) {
         return dao.getObject(clazz, id);
     }
     
     /**
-     * @see com.icsshs.tlbtWeb.transmission.handler.Manager#getObjects(java.lang.Class)
+     * @see com.BaseServiceImpl.tlbtWeb.transmission.handler.Manager#getObjects(java.lang.Class)
      */
     public List getObjects(Class clazz) {
         return dao.getObjects(clazz);
     }
     
     /**
-     * @see com.icsshs.tlbtWeb.transmission.handler.Manager#removeObject(java.lang.Class, java.io.Serializable)
+     * @see com.BaseServiceImpl.tlbtWeb.transmission.handler.Manager#removeObject(java.lang.Class, java.io.Serializable)
      */
     public void removeObject(Class clazz, Serializable id) {
         dao.removeObject(clazz, id);
     }
     
     /**
-     * @see com.icsshs.tlbtWeb.transmission.handler.Manager#saveObject(java.lang.Object)
+     * @see com.BaseServiceImpl.tlbtWeb.transmission.handler.Manager#saveObject(java.lang.Object)
      */
     public void saveObject(Object o) {
         dao.saveObject(o);

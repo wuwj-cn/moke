@@ -10,10 +10,12 @@ Ext.define('Moke.Application', {
     baseURL: 'http://localhost:8080/sys',
 
     requires : [ 
-                'Ext.app.*', 
+//                'Ext.app.*'
+//                'Ext.tux.Failure',
 //                'Ext.state.CookieProvider',
 //     			'Ext.window.MessageBox', 
-     			'Moke.*' ],
+//     			'Moke.*'
+    ],
      			
     stores: [
         // TODO: add global / shared stores here

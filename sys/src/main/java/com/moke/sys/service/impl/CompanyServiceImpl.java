@@ -3,13 +3,13 @@ package com.moke.sys.service.impl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.moke.core.service.impl.BaseManager;
+import com.moke.core.service.impl.BaseServiceImpl;
 import com.moke.sys.dao.CompanyDao;
 import com.moke.sys.model.Company;
-import com.moke.sys.service.CompanyManager;
+import com.moke.sys.service.CompanyService;
 
 @Service
-public class CompanyManagerImpl extends BaseManager implements CompanyManager {
+public class CompanyServiceImpl extends BaseServiceImpl implements CompanyService {
 
 	@Autowired
 	public CompanyDao companyDao;

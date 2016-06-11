@@ -3,13 +3,16 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xmlns:tx="http://www.springframework.org/schema/tx"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
-       		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd
-       		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx.xsd"
-        default-autowire="byName">
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+       		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.0.xsd
+       		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
 
+	<bean id="springContextUtil" class="com.moke.core.util.SpringContextUtil"/>
+	
+	<!-- 自动扫描Controller和ControllerAdvice之外的所有bean -->
 	<context:component-scan base-package="com.moke">
 		<context:exclude-filter type="annotation" expression="org.springframework.stereotype.Controller"/>
+		<context:exclude-filter type="annotation" expression="org.springframework.web.bind.annotation.ControllerAdvice"/>
 	</context:component-scan>
-
+	
 </beans>
